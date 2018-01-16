@@ -83,7 +83,7 @@
   - heartRate: double
   - symptoms: String
 
-# Class VitalSignsAndSymptoms has setter and getter methods, which make use of the variables.
+Class VitalSignsAndSymptoms has setter and getter methods, which make use of the variables.
 
 ## Class User has the following variables:
 
