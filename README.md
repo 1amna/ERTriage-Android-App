@@ -1,4 +1,4 @@
-## Phase III of ERTriage Project
+# Phase III of ERTriage Project
 
  The application, ERTriage, allows nurses to prioritize patients coming 
  into an ER in terms of urgency or arrival time.  Nurses can also keep 
@@ -10,7 +10,7 @@
  to and retrieved from text files.
 
 
-# Class Patient has the following variables:
+## Class Patient has the following variables:
   - Name: String
   - DateofBirth: String
   - HealthCardNumber: String
@@ -23,7 +23,7 @@
   - MostRecent: VitalSignsAndSymptoms - an instance of the patients most recent
     vital signs and symptoms.
 
-# Class Patient has the following methods, aside from setters and getters:
+## Class Patient has the following methods, aside from setters and getters:
   - UpdateMostRecent - has one parameter, an object of type VitalSignsAndSymptoms.  
     It updates the mostRecent vital signs and symptoms taken by the nurse.  If no 
     new values are taken, values from the previous instance are taken instead.
@@ -37,7 +37,7 @@
     a doctor.  Used when Patient returns to ER.
   - PrintPatientInfo - prints the patient's info on screen.
 
-# Class Triage has the following variables:
+## Class Triage has the following variables:
   - Patients: Map<String, Patient>: Where the keys are each Patient's
     HealthCardNumber and the values for each key are the numbers' respective
     Patient.  (Note Patients has no specific order since the methods
@@ -49,7 +49,7 @@
     storing patients' information (this is for testing purposes). 
   - patientList: List<Patient>: a list of all patients using source text file.
 
-# Class Triage has the following methods, aside from setters and getters:
+## Class Triage has the following methods, aside from setters and getters:
   - AddPatient - returns Patient and has one parameter, a Map<String, String>
     (where the first string is the name of the patient info's field, and the
     second is the value of which that field will take, ex: the first element is
@@ -75,7 +75,7 @@
   - LoadPatientData - Builds triage patient list from the serialized patient
     records file.
 
-# Class VitalSignsAndSymptoms has the following variables:
+## Class VitalSignsAndSymptoms has the following variables:
 
   - temperature: double
   - bloodPressureSystolic: double
@@ -83,45 +83,45 @@
   - heartRate: double
   - symptoms: String
 
-## Class VitalSignsAndSymptoms has setter and getter methods, which make use of the variables.
+# Class VitalSignsAndSymptoms has setter and getter methods, which make use of the variables.
 
-# Class User has the following variables:
+## Class User has the following variables:
 
   - userName: String
   - passwords: String
   - permissions: String
 
-# Class User has setter and getter methods, which make use of the variables.
+## Class User has setter and getter methods, which make use of the variables.
 
-# Class Nurse, which extends user, does not have any new variables and one constructor 
+## Class Nurse, which extends user, does not have any new variables and one constructor 
    making use of username and password vairbales.
 
-# Class CreatePatientActivity is an activity with no new variables and has @Override methods.
+## Class CreatePatientActivity is an activity with no new variables and has @Override methods.
 
-# Class DoctorVisitActivity is an activity with the following variables:
+## Class DoctorVisitActivity is an activity with the following variables:
   - triageList: Triage
   - healthCard: String
 
-# Aside from @Override methods, class DoctorVisitActivity has the method:
+## Aside from @Override methods, class DoctorVisitActivity has the method:
   - RecordDoctorVisit  - records visit into triageList.
 
 
-# Class ListPatientsActivity is an activity with the following variables:
+## Class ListPatientsActivity is an activity with the following variables:
   - ListOfPatients : TextView
   - triageList: Triage
 
-# Aside from @Override methods, class ListPatientsActivity has the following methods:
+## Aside from @Override methods, class ListPatientsActivity has the following methods:
   - listByUrgency - views all patients in terms of urgency by hospital standards.
   - listByArrival - views all patients in terms of arrival time.
 
-# Class LoginActivity is an activity with the following variables:
+## Class LoginActivity is an activity with the following variables:
   - userList : Map<String, User>
 
-# Aside from @Override methods, class LoginActivity has the following methods:
+## Aside from @Override methods, class LoginActivity has the following methods:
   - login - allows users to login.
   - loudUserData - loads login information. 
 
-# Class RecordPrescriptionActivity is an activity with the following methods, aside
+## Class RecordPrescriptionActivity is an activity with the following methods, aside
 from @Override methods:
   - recordPrescription - records prescription of medication.
 
